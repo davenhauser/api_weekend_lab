@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header', {subHeading: 'Welcome'}) %>
+
+  <main>
+    <h3>Search <%= (Math.random() > 0.5) ? "Foursquare" : "Swarm" %></h3>
+    <form method="POST" action="/search">
+      <label for="search">Place Name</label>
+      <input id="search" type="text" name="search[place]" placeholder="Cleveland, OH"/>
+      <input type="submit" value="Search" />
+    </form>
+  </main>
+
+  <%- include('partials/scripts') %>
+</body>
+</html>
