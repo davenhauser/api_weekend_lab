@@ -1,0 +1,5 @@
+var mongoose = require("mangoose");
+
+var userSchema = new mongoose.Schema({
+
+});

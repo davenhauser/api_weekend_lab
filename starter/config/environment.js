@@ -1,3 +1,4 @@
+require("dotenv").load();
 var _ = require('lodash');
 
 var localEnvVars = {

@@ -47,8 +47,6 @@ function search(req, res, next) {
 
     // Call res.send *in the API request's callback*!
     res.send(body.response.venues);
-
-    console.log("hello");
   });
 }
 
